@@ -1,0 +1,16 @@
+body {
+    display: flex;
+    background-color: aqua;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.grid {
+    margin: 10px;
+    border: solid 2px;
+    width: 250px;
+    height: 250px;
+}
