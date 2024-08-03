@@ -10,15 +10,9 @@ container.appendChild(div);
 
 }
 
-const grid = document.querySelector(".grid");
-grid.addEventListener("mousemove", hover);
-grid.addEventListener("mouseleave", leave);
+const grid = document.querySelectorAll(".grid");
 
-function hover(e) {
-    grid.style.backgroundColor = "grey";
-}
-
-function leave(e) {
-    grid.style.backgroundColor = "aqua";
-    console.log(e.type)
-}
+grid.forEach(box => {
+        box.addEventListener("mouseenter", hover => box.style.backgroundColor = "grey");
+        //box.addEventListener("mouseleave", leave => box.style.backgroundColor = "aqua");
+    });
