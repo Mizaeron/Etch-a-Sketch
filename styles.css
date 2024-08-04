@@ -1,16 +1,27 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
-    display: flex;
     background-color: aqua;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
 }
 
 .container {
     display: flex;
     flex-wrap: wrap;
-    
+    width: 960px;
+    height: 640px;
 }
+
 .grid {
-    margin: 10px;
-    border: solid 2px;
-    width: 250px;
-    height: 250px;
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+    border: solid 1px;
 }
