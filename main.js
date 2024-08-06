@@ -16,9 +16,12 @@ grid.forEach(box => {
 let reButton = document.querySelector("#reset").addEventListener("click", buttonClick);
 
 function buttonClick(e) {
-    let entry = prompt("Enter grid number");
-    let number = +entry;
     container.remove();
+
+    let entry = prompt("Enter grid number(max 100)");
+    let number = +entry;
+    
+    if (entry > 100) return alert("ERROR");
 
     const newContainer = document.createElement("div");
     newContainer.classList.add("new-container");
