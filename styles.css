@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body {
-    background-color: aqua;
+    background-color: rgb(215, 235, 235);
 }
 
 #main {
@@ -14,6 +14,15 @@ body {
 }
 
 .container {
+    padding: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 960px;
+    height: 640px;
+}
+
+.new-container {
+    padding: 60px;
     display: flex;
     flex-wrap: wrap;
     width: 960px;
@@ -21,7 +30,16 @@ body {
 }
 
 .grid {
-    width: calc(100% / 10);
-    height: calc(100% / 10);
+    width: calc(100% / 16);
+    height: calc(100% / 16);
     border: solid 1px;
+}
+
+#reset {
+    display: flex;
+    width: 60px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    font: 900;
 }
